@@ -11,7 +11,7 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true   // ✅ pour éviter le dépassement DEX
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -38,6 +38,6 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.3.1'
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    // ✅ Remplacement léger et compatible Android pour Excel
-    implementation 'com.github.SUPERCILEX.poi-android:poi:3.17'
+    // ✅ Nouvelle lib Excel légère et compatible Android
+    implementation 'org.dhatim:fastexcel:0.15.6'
 }
