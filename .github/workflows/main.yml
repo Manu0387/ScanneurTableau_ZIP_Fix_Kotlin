@@ -36,8 +36,8 @@ jobs:
         run: gradle help
 
       # ✅ Compiler l’APK debug
-      - name: Build Debug APK
-        run: gradle assembleDebug
+      - name: Build APK
+  run: ./gradlew :app:assembleDebug
 
       # ✅ Exporter l’APK en artifact
       - name: Upload APK
