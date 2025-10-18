@@ -31,13 +31,15 @@ jobs:
           sudo ln -sf /opt/gradle/bin/gradle /usr/bin/gradle
           gradle -v
 
-      # Télécharger les dépendances Kotlin & Android
+      # ✅ Préparer les dépendances Kotlin & Android avant build
       - name: Prepare dependencies
         run: gradle help
 
+      # ✅ Compiler l’APK debug
       - name: Build Debug APK
         run: gradle assembleDebug
 
+      # ✅ Exporter l’APK en artifact
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
