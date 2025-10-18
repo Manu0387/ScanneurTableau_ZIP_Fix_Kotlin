@@ -8,7 +8,6 @@ import android.view.*
 import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.*
-import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import java.io.OutputStream
 import com.exemple.scannertableau.R
 import com.exemple.scannertableau.data.*
@@ -49,15 +48,12 @@ class BoardFragment : Fragment() {
     }
 
     resolver.openOutputStream(uri)?.use { output ->
-        // ✅ Nouvelle méthode avec FastExcel
         val workbook = org.dhatim.fastexcel.Workbook(output, "ScanneurTableau", "1.0")
         val sheet = workbook.newWorksheet("Modules")
 
-        // En-têtes
         val headers = listOf("N°", "SSID", "Nom", "Disjoncteur")
         headers.forEachIndexed { i, t -> sheet.value(0, i, t) }
 
-        // Données
         list.forEachIndexed { index, module ->
             sheet.value(index + 1, 0, index + 1)
             sheet.value(index + 1, 1, module.ssid)
@@ -69,6 +65,8 @@ class BoardFragment : Fragment() {
     }
 
     Toast.makeText(requireContext(), "Exporté dans Téléchargements", Toast.LENGTH_LONG).show()
+}
+)
 }
 )
     } else Toast.makeText(requireContext(), "Erreur export", Toast.LENGTH_SHORT).show()
