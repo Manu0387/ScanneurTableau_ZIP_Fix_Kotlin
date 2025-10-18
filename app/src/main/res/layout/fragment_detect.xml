@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnScan"
+                android:text="🔍 Lancer le scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:visibility="gone"
+                android:layout_marginStart="12dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:text="Modules trouvés: 0"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Tableau électrique"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <GridLayout
+                android:columnCount="13"
+                android:useDefaultMargins="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <Button android:id="@+id/dj1" style="@style/Widget.St.BreakerButton" android:text="DJ1"/>
+                <Button android:id="@+id/dj2" style="@style/Widget.St.BreakerButton" android:text="DJ2"/>
+                <Button android:id="@+id/dj3" style="@style/Widget.St.BreakerButton" android:text="DJ3"/>
+                <Button android:id="@+id/dj4" style="@style/Widget.St.BreakerButton" android:text="DJ4"/>
+                <Button android:id="@+id/dj5" style="@style/Widget.St.BreakerButton" android:text="DJ5"/>
+                <Button android:id="@+id/dj6" style="@style/Widget.St.BreakerButton" android:text="DJ6"/>
+                <Button android:id="@+id/dj7" style="@style/Widget.St.BreakerButton" android:text="DJ7"/>
+                <Button android:id="@+id/dj8" style="@style/Widget.St.BreakerButton" android:text="DJ8"/>
+                <Button android:id="@+id/dj9" style="@style/Widget.St.BreakerButton" android:text="DJ9"/>
+                <Button android:id="@+id/dj10" style="@style/Widget.St.BreakerButton" android:text="DJ10"/>
+                <Button android:id="@+id/dj11" style="@style/Widget.St.BreakerButton" android:text="DJ11"/>
+                <Button android:id="@+id/dj12" style="@style/Widget.St.BreakerButton" android:text="DJ12"/>
+                <Button android:id="@+id/dj13" style="@style/Widget.St.BreakerButton" android:text="DJ13"/>
+            </GridLayout>
+    
+            <GridLayout
+                android:columnCount="13"
+                android:useDefaultMargins="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <Button android:id="@+id/dj14" style="@style/Widget.St.BreakerButton" android:text="DJ14"/>
+                <Button android:id="@+id/dj15" style="@style/Widget.St.BreakerButton" android:text="DJ15"/>
+                <Button android:id="@+id/dj16" style="@style/Widget.St.BreakerButton" android:text="DJ16"/>
+                <Button android:id="@+id/dj17" style="@style/Widget.St.BreakerButton" android:text="DJ17"/>
+                <Button android:id="@+id/dj18" style="@style/Widget.St.BreakerButton" android:text="DJ18"/>
+                <Button android:id="@+id/dj19" style="@style/Widget.St.BreakerButton" android:text="DJ19"/>
+                <Button android:id="@+id/dj20" style="@style/Widget.St.BreakerButton" android:text="DJ20"/>
+                <Button android:id="@+id/dj21" style="@style/Widget.St.BreakerButton" android:text="DJ21"/>
+                <Button android:id="@+id/dj22" style="@style/Widget.St.BreakerButton" android:text="DJ22"/>
+                <Button android:id="@+id/dj23" style="@style/Widget.St.BreakerButton" android:text="DJ23"/>
+                <Button android:id="@+id/dj24" style="@style/Widget.St.BreakerButton" android:text="DJ24"/>
+                <Button android:id="@+id/dj25" style="@style/Widget.St.BreakerButton" android:text="DJ25"/>
+                <Button android:id="@+id/dj26" style="@style/Widget.St.BreakerButton" android:text="DJ26"/>
+            </GridLayout>
+    
+            <GridLayout
+                android:columnCount="13"
+                android:useDefaultMargins="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <Button android:id="@+id/dj27" style="@style/Widget.St.BreakerButton" android:text="DJ27"/>
+                <Button android:id="@+id/dj28" style="@style/Widget.St.BreakerButton" android:text="DJ28"/>
+                <Button android:id="@+id/dj29" style="@style/Widget.St.BreakerButton" android:text="DJ29"/>
+                <Button android:id="@+id/dj30" style="@style/Widget.St.BreakerButton" android:text="DJ30"/>
+                <Button android:id="@+id/dj31" style="@style/Widget.St.BreakerButton" android:text="DJ31"/>
+                <Button android:id="@+id/dj32" style="@style/Widget.St.BreakerButton" android:text="DJ32"/>
+                <Button android:id="@+id/dj33" style="@style/Widget.St.BreakerButton" android:text="DJ33"/>
+                <Button android:id="@+id/dj34" style="@style/Widget.St.BreakerButton" android:text="DJ34"/>
+                <Button android:id="@+id/dj35" style="@style/Widget.St.BreakerButton" android:text="DJ35"/>
+                <Button android:id="@+id/dj36" style="@style/Widget.St.BreakerButton" android:text="DJ36"/>
+                <Button android:id="@+id/dj37" style="@style/Widget.St.BreakerButton" android:text="DJ37"/>
+                <Button android:id="@+id/dj38" style="@style/Widget.St.BreakerButton" android:text="DJ38"/>
+                <Button android:id="@+id/dj39" style="@style/Widget.St.BreakerButton" android:text="DJ39"/>
+            </GridLayout>
+    
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

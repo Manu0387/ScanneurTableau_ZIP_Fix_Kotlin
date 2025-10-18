@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="st_primary">#1976D2</color>
+    <color name="st_accent">#1565C0</color>
+    <color name="st_primary_green">#4CAF50</color>
+    <color name="st_accent_green">#388E3C</color>
+    <color name="st_primary_dark">#121212</color>
+    <color name="st_accent_dark">#263238</color>
+    <color name="st_bg">#ECEFF1</color>
+    <color name="st_ok">#2E7D32</color>
+    <color name="st_ko">#C62828</color>
+    <color name="st_text">#202124</color>
+</resources>

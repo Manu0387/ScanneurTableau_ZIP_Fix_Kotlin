@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.Blue" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/st_primary</item>
+        <item name="colorPrimaryVariant">@color/st_accent</item>
+        <item name="colorSecondary">@color/st_primary</item>
+        <item name="android:windowBackground">@color/st_bg</item>
+    </style>
+    <style name="Theme.App.Green" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/st_primary_green</item>
+        <item name="colorPrimaryVariant">@color/st_accent_green</item>
+        <item name="colorSecondary">@color/st_primary_green</item>
+        <item name="android:windowBackground">@color/st_bg</item>
+    </style>
+    <style name="Theme.App.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/st_accent_dark</item>
+        <item name="colorSecondary">@color/st_accent_dark</item>
+        <item name="android:windowBackground">@color/st_primary_dark</item>
+    </style>
+    <style name="Widget.St.BreakerButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
