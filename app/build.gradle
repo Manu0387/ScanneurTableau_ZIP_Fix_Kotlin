@@ -5,6 +5,7 @@ android {
   namespace 'com.exemple.scannertableau'
   compileSdk 33
   defaultConfig {
+    multiDexEnabled true
     applicationId "com.exemple.scannertableau"
     minSdk 26
     targetSdk 33
@@ -25,6 +26,7 @@ android {
 }
 
 dependencies {
+  implementation 'androidx.multidex:multidex:2.0.1'
   implementation 'androidx.core:core-ktx:1.10.1'
   implementation 'androidx.appcompat:appcompat:1.6.1'
   implementation 'com.google.android.material:material:1.9.0'
