@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Scanneur tableau</string>
+  <string name="tab_detect">Détection</string>
+  <string name="tab_board">Tableau</string>
+  <string name="tab_settings">Paramètres</string>
+  <string name="export_excel">Exporter vers Excel</string>
+</resources>
